@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Platform Font Demo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Kojo</title>
+    <style>
+        @font-face {
+            font-family: 'Platform';
+            src: url('Platform-Bold.woff2') format('woff2'),
+                 url('Platform-Bold.woff') format('woff'),
+                 url('Platform-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #ffffff; /* Set white background */
+            margin: 0; /* Remove default margin */
+            display: flex; /* Center content */
+            justify-content: center; /* Horizontally center */
+            align-items: center; /* Vertically center */
+            height: 100vh; /* Full viewport height */
+            font-family: 'Platform', sans-serif;
+        }
+
+        .text {
+            font-size: 40px; /* Set font size */
+            color: #41D87D; /* Text color */
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <header style="background-color: #f0f0f0; padding: 20px; text-align: center;">
-        <h1 style="font-family: 'Platform'; font-size: 48px; color: #41D87D;">
-            Welcome to the Platform Font Demo
-        </h1>
-    </header>
-    <section style="padding: 20px;">
-        <p style="font-family: 'Platform'; font-size: 18px; color: #333;">
-            This is a sample paragraph using the Platform font. You can adjust the font size, weight,
-            and style to fit your design needs.
-        </p>
-        <p style="font-family: 'Platform'; font-size: 24px; color: #41D87D; margin: 0; line-height: 1; display: inline;">
-            <strong>gfx kojo</strong>
-        </p>
-        <button style="font-family: 'Platform'; font-size: 16px; padding: 10px 20px; background-color: #41D87D; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
-            Click Me
-        </button>
-    </section>
+    <p class="text">kojo</p>
 </body>
 </html>
